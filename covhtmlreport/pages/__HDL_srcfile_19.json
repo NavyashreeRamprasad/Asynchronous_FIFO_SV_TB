@@ -1,0 +1,19 @@
+var g_sourceLines = [
+'mailbox gen2bfm_wr = new();',
+'mailbox mon2scb_wr = new();',
+'mailbox mon2cov_wr = new();',
+'mailbox gen2bfm_rd = new();',
+'mailbox mon2scb_rd = new();',
+'mailbox mon2cov_rd = new();',
+'class common;',
+'     static string testcase = "UNDERFLOW";',
+'     static int N = 50;',
+'     static int wr_bfm_count =0;',
+'     static int rd_bfm_count =0;',
+'     static int matching =0;',
+'     static int mismatch =0;',
+'     static int scb_count =0;',
+'endclass',
+''
+];
+countinueBuildStmtTable(g_sourceLines);

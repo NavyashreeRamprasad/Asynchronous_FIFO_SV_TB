@@ -1,0 +1,59 @@
+module top();
+bit wr_clk_i,rd_clk_i,rst_i;
+
+//physical interface
+intf pif(wr_clk_i,rd_clk_i,rst_i);
+
+//dut instantiation
+async_fifo dut(
+    .wr_clk_i     (wr_clk_i),
+    .rd_clk_i     (rd_clk_i),
+    .rst_i        (rst_i),
+    .wr_en_i      (pif.wr_en_i),
+    .rd_en_i      (pif.rd_en_i),
+    .wdata_i      (pif.wdata_i),
+    .rdata_o      (pif.rdata_o),
+    .full_o       (pif.full_o),
+    .empty_o      (pif.empty_o),
+    .overflow_o   (pif.overflow_o),
+    .underflow_o  (pif.underflow_o)
+);
+
+//clock generation
+always #5 wr_clk_i = ~wr_clk_i;
+always #10 rd_clk_i = ~rd_clk_i;
+
+//env instantiation and run method calling
+environment env;
+  initial begin
+    pif.wr_en_i = 0;
+    pif.rd_en_i = 0;
+    pif.wdata_i = 0;
+    env = new();
+    env.run();
+  end
+  
+//reset generation
+  initial begin
+   rst_i <= 1;
+   @(posedge wr_clk_i);
+   rst_i <= 0;
+   repeat (2) @(posedge wr_clk_i);
+   rst_i <= 1;
+  end
+	initial begin
+		#10000 $finish();
+	end
+
+ initial begin
+wait(common::scb_count == common::N);
+
+  $display("wr_bfm_count = %0d",common::wr_bfm_count);
+    if(common::matching == 0 && common::mismatch > 0)
+      $display("TESTCASE FAILED WITH MATCH = %0d , MISMATCH = %0d",common::matching,common::mismatch);
+    else
+      $display("TESTCASE PASSED WITH MATCH = %0d , MISMATCH =%0d",common::matching,common::mismatch);
+
+  end
+
+endmodule

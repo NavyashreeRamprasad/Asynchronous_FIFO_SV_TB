@@ -1,0 +1,16 @@
+var g_data = {
+c54:[4,'READ',[],,'53',1,1,'cgr','51','work.list_svh_unit::rd_coverage',[[],[0,'1','83',,'RD_EN']],[]],
+c55:[4,'EMPTY',[],,'53',1,1,'cgr','51','work.list_svh_unit::rd_coverage',[[],[0,'1','4',,'EM']],[]],
+c56:[4,'UNDERFLOW',[],,'53',1,1,'cgr','51','work.list_svh_unit::rd_coverage',[[],[0,'1','1',,'UF']],[]],
+c61:[4,'WRITE',[],,'60',1,1,'cg1','58','work.list_svh_unit::wr_coverage',[[],[0,'1','115',,'WR_EN']],[]],
+c62:[4,'FULL',[],,'60',1,1,'cg1','58','work.list_svh_unit::wr_coverage',[[],[0,'1','5',,'FU']],[]],
+c63:[4,'OVERFLOW',[],,'60',1,1,'cg1','58','work.list_svh_unit::wr_coverage',[[],[0,'1','1',,'OF']],[]],
+c357:[4,'READ',[],,'356',1,1,'cgr','354','/list_svh_unit/rd_coverage',[[],[0,'1','83',,'RD_EN']],[]],
+c358:[4,'EMPTY',[],,'356',1,1,'cgr','354','/list_svh_unit/rd_coverage',[[],[0,'1','4',,'EM']],[]],
+c359:[4,'UNDERFLOW',[],,'356',1,1,'cgr','354','/list_svh_unit/rd_coverage',[[],[0,'1','1',,'UF']],[]],
+c364:[4,'WRITE',[],,'363',1,1,'cg1','361','/list_svh_unit/wr_coverage',[[],[0,'1','115',,'WR_EN']],[]],
+c365:[4,'FULL',[],,'363',1,1,'cg1','361','/list_svh_unit/wr_coverage',[[],[0,'1','5',,'FU']],[]],
+c366:[4,'OVERFLOW',[],,'363',1,1,'cg1','361','/list_svh_unit/wr_coverage',[[],[0,'1','1',,'OF']],[]],
+dummyEnd:0
+};
+processCovergroupsData(g_data);

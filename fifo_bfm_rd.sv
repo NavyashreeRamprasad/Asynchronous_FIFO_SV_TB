@@ -1,0 +1,36 @@
+class rd_busfm;
+  virtual intf vif;
+  rd_transaction rd_tx;
+
+  function new();
+    vif = top.pif;
+  endfunction
+
+  task run();
+    forever begin
+      wait(vif.rst_i == 1);
+      gen2bfm_rd.get(rd_tx);
+      fork
+        begin : DRIVE
+          drive_tx(rd_tx);
+        end
+        begin : RESET_WATCH
+          wait(vif.rst_i == 0);
+          vif.rd_en_i = 0;
+        end
+      join_any
+      disable fork;
+    end
+  endtask
+
+  task drive_tx(rd_transaction rd_tx);
+    @(posedge vif.rd_clk_i);
+    vif.rd_en_i = rd_tx.rd_en_i;
+    if (rd_tx.rd_en_i == 1) begin
+      @(posedge vif.rd_clk_i);
+      rd_tx.rdata_o = vif.rdata_o;
+      common::rd_bfm_count++;
+    end
+    vif.rd_en_i = 0;
+  endtask
+endclass

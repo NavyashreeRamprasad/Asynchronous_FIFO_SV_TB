@@ -1,0 +1,1073 @@
+# vsim -coverage CONCURRENT -l fifo.log 
+# Start time: 22:43:12 on Jul 27,2026
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.intf(fast)
+# ** Note: $finish    : top.sv(45)
+#    Time: 10 us  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.sv line 45
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:46:26 on Jul 27,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling module async_fifo
+# -- Compiling interface intf
+# -- Compiling package list_svh_unit
+# ** Warning: fifo_generator_rd.sv(12): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:46:26 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# QuestaSim-64 vopt 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:46:27 on Jul 27,2026
+# vopt -reportprogress 300 top "+cover=fcbest" -o CONCURRENT 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading interface intf
+# -- Loading module async_fifo
+# Incremental compilation check found 3 design-units (out of 5) may be reused.
+# Optimizing 2 design-units (inlining 2/3 module instances):
+# -- Inlining interface intf(fast)
+# -- Inlining module async_fifo(fast)
+# -- Optimizing module top(fast)
+# -- Optimizing package list_svh_unit(fast)
+# ** Warning: fifo_generator_rd.sv(12): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Optimized design name is CONCURRENT
+# End time: 22:46:27 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# Saving coverage database on exit...
+# ** Warning: (vsim-6874) Could not find debugging symbol files for some design-units in the design. Use 'gendbs' command to generate missing symbol files to ensure correct coverage debugging information in the GUI.
+# End time: 22:46:30 on Jul 27,2026, Elapsed time: 0:03:18
+# Errors: 0, Warnings: 9
+# vsim -coverage CONCURRENT -l fifo.log 
+# Start time: 22:46:30 on Jul 27,2026
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.intf(fast)
+# TESTCASE PASSED WITH MATCH = 10 , MISMATCH =0
+# ** Note: $finish    : top.sv(45)
+#    Time: 10 us  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.sv line 45
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:47:55 on Jul 27,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling module async_fifo
+# -- Compiling interface intf
+# -- Compiling package list_svh_unit
+# ** Warning: fifo_generator_rd.sv(12): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:47:55 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# QuestaSim-64 vopt 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:47:56 on Jul 27,2026
+# vopt -reportprogress 300 top "+cover=fcbest" -o CONCURRENT 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading interface intf
+# -- Loading module async_fifo
+# Incremental compilation check found 3 design-units (out of 5) may be reused.
+# Optimizing 2 design-units (inlining 2/3 module instances):
+# -- Inlining interface intf(fast)
+# -- Inlining module async_fifo(fast)
+# -- Optimizing module top(fast)
+# -- Optimizing package list_svh_unit(fast)
+# ** Warning: fifo_generator_rd.sv(12): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Optimized design name is CONCURRENT
+# End time: 22:47:56 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# Saving coverage database on exit...
+# ** Warning: (vsim-6874) Could not find debugging symbol files for some design-units in the design. Use 'gendbs' command to generate missing symbol files to ensure correct coverage debugging information in the GUI.
+# End time: 22:47:59 on Jul 27,2026, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 9
+# vsim -coverage CONCURRENT -l fifo.log 
+# Start time: 22:47:59 on Jul 27,2026
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.intf(fast)
+# TESTCASE PASSED WITH MATCH = 50 , MISMATCH =0
+# ** Note: $finish    : top.sv(45)
+#    Time: 10 us  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.sv line 45
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:54:08 on Jul 27,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling module async_fifo
+# -- Compiling interface intf
+# -- Compiling package list_svh_unit
+# ** Warning: fifo_generator_rd.sv(12): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:54:09 on Jul 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 8
+# QuestaSim-64 vopt 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:54:09 on Jul 27,2026
+# vopt -reportprogress 300 top "+cover=fcbest" -o CONCURRENT 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading interface intf
+# -- Loading module async_fifo
+# Incremental compilation check found 3 design-units (out of 5) may be reused.
+# Optimizing 2 design-units (inlining 2/3 module instances):
+# -- Inlining interface intf(fast)
+# -- Inlining module async_fifo(fast)
+# -- Optimizing module top(fast)
+# -- Optimizing package list_svh_unit(fast)
+# ** Warning: fifo_generator_rd.sv(12): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Optimized design name is CONCURRENT
+# End time: 22:54:09 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# Saving coverage database on exit...
+# ** Warning: (vsim-6874) Could not find debugging symbol files for some design-units in the design. Use 'gendbs' command to generate missing symbol files to ensure correct coverage debugging information in the GUI.
+# End time: 22:54:12 on Jul 27,2026, Elapsed time: 0:06:13
+# Errors: 0, Warnings: 9
+# vsim -coverage CONCURRENT -l fifo.log 
+# Start time: 22:54:12 on Jul 27,2026
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.intf(fast)
+# ** Error: INVALID TESTCASE
+#    Time: 0 ns  Scope: list_svh_unit.rd_generator.run File: fifo_generator_rd.sv Line: 35
+# ** Note: $finish    : top.sv(45)
+#    Time: 10 us  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.sv line 45
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:57:24 on Jul 27,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling module async_fifo
+# -- Compiling interface intf
+# -- Compiling package list_svh_unit
+# ** Warning: fifo_generator_rd.sv(12): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:57:24 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# QuestaSim-64 vopt 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:57:24 on Jul 27,2026
+# vopt -reportprogress 300 top "+cover=fcbest" -o OVERFLOW 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading interface intf
+# -- Loading module async_fifo
+# Incremental compilation check found 3 design-units (out of 5) may be reused.
+# Optimizing 2 design-units (inlining 2/3 module instances):
+# -- Inlining interface intf(fast)
+# -- Inlining module async_fifo(fast)
+# -- Optimizing module top(fast)
+# -- Optimizing package list_svh_unit(fast)
+# ** Warning: fifo_generator_rd.sv(12): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Optimized design name is OVERFLOW
+# End time: 22:57:25 on Jul 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 8
+# Saving coverage database on exit...
+# End time: 22:57:27 on Jul 27,2026, Elapsed time: 0:03:15
+# Errors: 1, Warnings: 8
+# vsim -coverage OVERFLOW -l fifo.log 
+# Start time: 22:57:27 on Jul 27,2026
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.intf(fast)
+# ** Error: INVALID TESTCASE
+#    Time: 0 ns  Scope: list_svh_unit.rd_generator.run File: fifo_generator_rd.sv Line: 35
+# ** Note: $finish    : top.sv(45)
+#    Time: 10 us  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.sv line 45
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:59:28 on Jul 27,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling module async_fifo
+# -- Compiling interface intf
+# -- Compiling package list_svh_unit
+# ** Warning: fifo_generator_rd.sv(12): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 22:59:28 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# QuestaSim-64 vopt 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 22:59:29 on Jul 27,2026
+# vopt -reportprogress 300 top "+cover=fcbest" -o EMPTY 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading interface intf
+# -- Loading module async_fifo
+# Incremental compilation check found 3 design-units (out of 5) may be reused.
+# Optimizing 2 design-units (inlining 2/3 module instances):
+# -- Inlining interface intf(fast)
+# -- Inlining module async_fifo(fast)
+# -- Optimizing module top(fast)
+# -- Optimizing package list_svh_unit(fast)
+# ** Warning: fifo_generator_rd.sv(12): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Optimized design name is EMPTY
+# End time: 22:59:29 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# Saving coverage database on exit...
+# End time: 22:59:30 on Jul 27,2026, Elapsed time: 0:02:03
+# Errors: 1, Warnings: 8
+# vsim -coverage EMPTY -l fifo.log 
+# Start time: 22:59:31 on Jul 27,2026
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.intf(fast)
+# ** Note: $finish    : top.sv(45)
+#    Time: 10 us  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.sv line 45
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:00:40 on Jul 27,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling module async_fifo
+# -- Compiling interface intf
+# -- Compiling package list_svh_unit
+# ** Warning: fifo_generator_rd.sv(12): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 23:00:40 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# QuestaSim-64 vopt 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:00:41 on Jul 27,2026
+# vopt -reportprogress 300 top "+cover=fcbest" -o OVERFLOW 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading interface intf
+# -- Loading module async_fifo
+# Incremental compilation check found no design-units have changed.
+# Optimized design name is OVERFLOW
+# End time: 23:00:41 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Saving coverage database on exit...
+# End time: 23:00:42 on Jul 27,2026, Elapsed time: 0:01:11
+# Errors: 0, Warnings: 8
+# vsim -coverage OVERFLOW -l fifo.log 
+# Start time: 23:00:42 on Jul 27,2026
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.intf(fast)
+# ** Error: INVALID TESTCASE
+#    Time: 0 ns  Scope: list_svh_unit.rd_generator.run File: fifo_generator_rd.sv Line: 35
+# ** Note: $finish    : top.sv(45)
+#    Time: 10 us  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.sv line 45
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:01:50 on Jul 27,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling module async_fifo
+# -- Compiling interface intf
+# -- Compiling package list_svh_unit
+# ** Warning: fifo_generator_rd.sv(12): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 23:01:51 on Jul 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 8
+# QuestaSim-64 vopt 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:01:51 on Jul 27,2026
+# vopt -reportprogress 300 top "+cover=fcbest" -o UNDERFLOW 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading interface intf
+# -- Loading module async_fifo
+# Incremental compilation check found 3 design-units (out of 5) may be reused.
+# Optimizing 2 design-units (inlining 2/3 module instances):
+# -- Inlining interface intf(fast)
+# -- Inlining module async_fifo(fast)
+# -- Optimizing module top(fast)
+# -- Optimizing package list_svh_unit(fast)
+# ** Warning: fifo_generator_rd.sv(12): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Optimized design name is UNDERFLOW
+# End time: 23:01:51 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# Saving coverage database on exit...
+# End time: 23:01:53 on Jul 27,2026, Elapsed time: 0:01:11
+# Errors: 1, Warnings: 8
+# vsim -coverage UNDERFLOW -l fifo.log 
+# Start time: 23:01:53 on Jul 27,2026
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.intf(fast)
+# ** Note: $finish    : top.sv(45)
+#    Time: 10 us  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.sv line 45
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:02:14 on Jul 27,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling module async_fifo
+# -- Compiling interface intf
+# -- Compiling package list_svh_unit
+# ** Warning: fifo_generator_rd.sv(12): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 23:02:14 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# QuestaSim-64 vopt 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:02:14 on Jul 27,2026
+# vopt -reportprogress 300 top "+cover=fcbest" -o UNDERFLOW 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading interface intf
+# -- Loading module async_fifo
+# Incremental compilation check found no design-units have changed.
+# Optimized design name is UNDERFLOW
+# End time: 23:02:14 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Saving coverage database on exit...
+# End time: 23:02:16 on Jul 27,2026, Elapsed time: 0:00:23
+# Errors: 0, Warnings: 8
+# vsim -coverage UNDERFLOW -l fifo.log 
+# Start time: 23:02:16 on Jul 27,2026
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.intf(fast)
+# ** Note: $finish    : top.sv(45)
+#    Time: 10 us  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.sv line 45
+vcov merge final.ucdb *.ucdb
+# QuestaSim-64 vcover 10.7c Coverage Utility 2018.08 Aug 18 2018
+# Start time: 23:06:18 on Jul 27,2026
+# vcover merge final.ucdb CONCURRENT.ucdb EMPTY.ucdb FULL.ucdb OVERFLOW.ucdb UNDERFLOW.ucdb 
+# QuestaSim-64 vcover 10.7c Coverage Utility 2018.08 Aug 18 2018
+# Merging file CONCURRENT.ucdb
+# Merging file EMPTY.ucdb
+# Merging file FULL.ucdb
+# ** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file FULL.ucdb, skipping code coverage merge for design unit work.top defined in file top.sv, line 1
+# ** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file FULL.ucdb, skipping code coverage merge for instance /top defined in file top.sv, line 1
+# Merging file OVERFLOW.ucdb
+# Merging file UNDERFLOW.ucdb
+# Writing merged result to final.ucdb
+# 
+# End time: 23:06:18 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:09:47 on Jul 27,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling module async_fifo
+# -- Compiling interface intf
+# -- Compiling package list_svh_unit
+# ** Warning: fifo_generator_rd.sv(12): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 23:09:47 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# QuestaSim-64 vopt 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:09:47 on Jul 27,2026
+# vopt -reportprogress 300 top "+cover=fcbest" -o FULL 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading interface intf
+# -- Loading module async_fifo
+# Incremental compilation check found 3 design-units (out of 5) may be reused.
+# Optimizing 2 design-units (inlining 2/3 module instances):
+# -- Inlining interface intf(fast)
+# -- Inlining module async_fifo(fast)
+# -- Optimizing module top(fast)
+# -- Optimizing package list_svh_unit(fast)
+# ** Warning: fifo_generator_rd.sv(12): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Optimized design name is FULL
+# End time: 23:09:48 on Jul 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 8
+# Saving coverage database on exit...
+# End time: 23:09:49 on Jul 27,2026, Elapsed time: 0:07:33
+# Errors: 0, Warnings: 8
+# vsim -coverage FULL -l fifo.log 
+# Start time: 23:09:49 on Jul 27,2026
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.intf(fast)
+# ** Error: INVALID TESTCASE
+#    Time: 0 ns  Scope: list_svh_unit.rd_generator.run File: fifo_generator_rd.sv Line: 35
+# ** Note: $finish    : top.sv(45)
+#    Time: 10 us  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.sv line 45
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:10:09 on Jul 27,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling module async_fifo
+# -- Compiling interface intf
+# -- Compiling package list_svh_unit
+# ** Warning: fifo_generator_rd.sv(12): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 23:10:10 on Jul 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 8
+# QuestaSim-64 vopt 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:10:10 on Jul 27,2026
+# vopt -reportprogress 300 top "+cover=fcbest" -o FULL 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading interface intf
+# -- Loading module async_fifo
+# Incremental compilation check found no design-units have changed.
+# Optimized design name is FULL
+# End time: 23:10:10 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Saving coverage database on exit...
+# End time: 23:10:11 on Jul 27,2026, Elapsed time: 0:00:22
+# Errors: 1, Warnings: 8
+# vsim -coverage FULL -l fifo.log 
+# Start time: 23:10:11 on Jul 27,2026
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.intf(fast)
+# ** Error: INVALID TESTCASE
+#    Time: 0 ns  Scope: list_svh_unit.rd_generator.run File: fifo_generator_rd.sv Line: 35
+# ** Note: $finish    : top.sv(45)
+#    Time: 10 us  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.sv line 45
+vcov merge final_coverage.ucdb *.ucdb
+# QuestaSim-64 vcover 10.7c Coverage Utility 2018.08 Aug 18 2018
+# Start time: 23:11:13 on Jul 27,2026
+# vcover merge final_coverage.ucdb CONCURRENT.ucdb EMPTY.ucdb FULL.ucdb OVERFLOW.ucdb UNDERFLOW.ucdb 
+# QuestaSim-64 vcover 10.7c Coverage Utility 2018.08 Aug 18 2018
+# Merging file CONCURRENT.ucdb
+# Merging file EMPTY.ucdb
+# Merging file FULL.ucdb
+# Merging file OVERFLOW.ucdb
+# Merging file UNDERFLOW.ucdb
+# Writing merged result to final_coverage.ucdb
+# 
+# End time: 23:11:13 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# coverage read -dataset final_coverage C:/Navya/VLSIGURU/asynchronous_fifo_tb_sv/final_coverage.ucdb
+# C:/Navya/VLSIGURU/asynchronous_fifo_tb_sv/final_coverage.ucdb opened as coverage dataset "final_coverage"
+coverage exclude -du async_fifo -togglenode i
+coverage exclude -du async_fifo -togglenode rdata_o
+coverage report -html -htmldir covhtmlreport -source -details -assert -directive -cvg -code bcefst -threshL 50 -threshH 90
+# Report created in covhtmlreport/index.html
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:19:29 on Jul 27,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling module async_fifo
+# -- Compiling interface intf
+# -- Compiling package list_svh_unit
+# ** Warning: fifo_generator_rd.sv(12): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 23:19:29 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# QuestaSim-64 vopt 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:19:30 on Jul 27,2026
+# vopt -reportprogress 300 top "+cover=fcbest" -o CONCURRENT 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading interface intf
+# -- Loading module async_fifo
+# Incremental compilation check found 3 design-units (out of 5) may be reused.
+# Optimizing 2 design-units (inlining 2/3 module instances):
+# -- Inlining interface intf(fast)
+# -- Inlining module async_fifo(fast)
+# -- Optimizing module top(fast)
+# -- Optimizing package list_svh_unit(fast)
+# ** Warning: fifo_generator_rd.sv(12): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# Optimized design name is CONCURRENT
+# End time: 23:19:30 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# Saving coverage database on exit...
+# End time: 23:19:33 on Jul 27,2026, Elapsed time: 0:09:22
+# Errors: 1, Warnings: 0
+# vsim -coverage CONCURRENT -l fifo.log 
+# Start time: 23:19:33 on Jul 27,2026
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.intf(fast)
+# wr_bfm_count = 50
+# TESTCASE PASSED WITH MATCH = 50 , MISMATCH =0
+# ** Note: $finish    : top.sv(45)
+#    Time: 10 us  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.sv line 45
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:20:45 on Jul 27,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling module async_fifo
+# -- Compiling interface intf
+# -- Compiling package list_svh_unit
+# ** Warning: fifo_generator_rd.sv(12): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 23:20:45 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# QuestaSim-64 vopt 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:20:45 on Jul 27,2026
+# vopt -reportprogress 300 top "+cover=fcbest" -o CONCURRENT 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading interface intf
+# -- Loading module async_fifo
+# Incremental compilation check found no design-units have changed.
+# Optimized design name is CONCURRENT
+# End time: 23:20:45 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Saving coverage database on exit...
+# End time: 23:20:46 on Jul 27,2026, Elapsed time: 0:01:13
+# Errors: 0, Warnings: 8
+# vsim -coverage CONCURRENT -l fifo.log 
+# Start time: 23:20:46 on Jul 27,2026
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.intf(fast)
+# wr_bfm_count = 50
+# TESTCASE PASSED WITH MATCH = 50 , MISMATCH =0
+# ** Note: $finish    : top.sv(45)
+#    Time: 10 us  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.sv line 45
+vcov merge final_coverage.ucdb *.ucdb
+# QuestaSim-64 vcover 10.7c Coverage Utility 2018.08 Aug 18 2018
+# Start time: 23:21:23 on Jul 27,2026
+# vcover merge final_coverage.ucdb CONCURRENT.ucdb EMPTY.ucdb FULL.ucdb OVERFLOW.ucdb UNDERFLOW.ucdb 
+# QuestaSim-64 vcover 10.7c Coverage Utility 2018.08 Aug 18 2018
+# Merging file CONCURRENT.ucdb
+# Merging file EMPTY.ucdb
+# ** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file EMPTY.ucdb, skipping code coverage merge for design unit work.top defined in file top.sv, line 1
+# ** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file EMPTY.ucdb, skipping code coverage merge for instance /top defined in file top.sv, line 1
+# Merging file FULL.ucdb
+# ** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file FULL.ucdb, skipping code coverage merge for design unit work.top defined in file top.sv, line 1
+# ** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file FULL.ucdb, skipping code coverage merge for instance /top defined in file top.sv, line 1
+# Merging file OVERFLOW.ucdb
+# ** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file OVERFLOW.ucdb, skipping code coverage merge for design unit work.top defined in file top.sv, line 1
+# ** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file OVERFLOW.ucdb, skipping code coverage merge for instance /top defined in file top.sv, line 1
+# Merging file UNDERFLOW.ucdb
+# ** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file UNDERFLOW.ucdb, skipping code coverage merge for design unit work.top defined in file top.sv, line 1
+# ** Warning: (vcover-6820) Source code mismatch detected while merging ucdb file UNDERFLOW.ucdb, skipping code coverage merge for instance /top defined in file top.sv, line 1
+# Writing merged result to final_coverage.ucdb
+# 
+# End time: 23:21:23 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# coverage read -dataset final_coverage1 C:/Navya/VLSIGURU/asynchronous_fifo_tb_sv/final_coverage.ucdb
+# C:/Navya/VLSIGURU/asynchronous_fifo_tb_sv/final_coverage.ucdb opened as coverage dataset "final_coverage1"
+coverage report -html -htmldir covhtmlreport -source -details -assert -directive -cvg -code bcefst -threshL 50 -threshH 90
+# Report created in covhtmlreport/index.html
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:23:31 on Jul 27,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling module async_fifo
+# -- Compiling interface intf
+# -- Compiling package list_svh_unit
+# ** Warning: fifo_generator_rd.sv(12): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 23:23:31 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# QuestaSim-64 vopt 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:23:31 on Jul 27,2026
+# vopt -reportprogress 300 top "+cover=fcbest" -o FULL 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading interface intf
+# -- Loading module async_fifo
+# Incremental compilation check found 4 design-units (out of 5) may be reused.
+# Optimizing 1 design-unit (inlining 2/3 module instances):
+# -- Inlining interface intf(fast)
+# -- Inlining module async_fifo(fast)
+# -- Optimizing module top(fast)
+# Optimized design name is FULL
+# End time: 23:23:32 on Jul 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Saving coverage database on exit...
+# End time: 23:23:38 on Jul 27,2026, Elapsed time: 0:02:52
+# Errors: 0, Warnings: 0
+# vsim -coverage FULL -l fifo.log 
+# Start time: 23:23:38 on Jul 27,2026
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.intf(fast)
+# ** Error: INVALID TESTCASE
+#    Time: 0 ns  Scope: list_svh_unit.rd_generator.run File: fifo_generator_rd.sv Line: 35
+# ** Note: $finish    : top.sv(45)
+#    Time: 10 us  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.sv line 45
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:24:30 on Jul 27,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling module async_fifo
+# -- Compiling interface intf
+# -- Compiling package list_svh_unit
+# ** Warning: fifo_generator_rd.sv(12): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 23:24:30 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# QuestaSim-64 vopt 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:24:31 on Jul 27,2026
+# vopt -reportprogress 300 top "+cover=fcbest" -o OVERFLOW 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading interface intf
+# -- Loading module async_fifo
+# Incremental compilation check found 4 design-units (out of 5) may be reused.
+# Optimizing 1 design-unit (inlining 2/3 module instances):
+# -- Inlining interface intf(fast)
+# -- Inlining module async_fifo(fast)
+# -- Optimizing module top(fast)
+# Optimized design name is OVERFLOW
+# End time: 23:24:31 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Saving coverage database on exit...
+# End time: 23:24:32 on Jul 27,2026, Elapsed time: 0:00:54
+# Errors: 1, Warnings: 8
+# vsim -coverage OVERFLOW -l fifo.log 
+# Start time: 23:24:32 on Jul 27,2026
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.intf(fast)
+# ** Error: INVALID TESTCASE
+#    Time: 0 ns  Scope: list_svh_unit.rd_generator.run File: fifo_generator_rd.sv Line: 35
+# ** Note: $finish    : top.sv(45)
+#    Time: 10 us  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.sv line 45
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:25:24 on Jul 27,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling module async_fifo
+# -- Compiling interface intf
+# -- Compiling package list_svh_unit
+# ** Warning: fifo_generator_rd.sv(12): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 23:25:24 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# QuestaSim-64 vopt 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:25:25 on Jul 27,2026
+# vopt -reportprogress 300 top "+cover=fcbest" -o EMPTY 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading interface intf
+# -- Loading module async_fifo
+# Incremental compilation check found 4 design-units (out of 5) may be reused.
+# Optimizing 1 design-unit (inlining 2/3 module instances):
+# -- Inlining interface intf(fast)
+# -- Inlining module async_fifo(fast)
+# -- Optimizing module top(fast)
+# Optimized design name is EMPTY
+# End time: 23:25:25 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Saving coverage database on exit...
+# End time: 23:25:26 on Jul 27,2026, Elapsed time: 0:00:54
+# Errors: 1, Warnings: 8
+# vsim -coverage EMPTY -l fifo.log 
+# Start time: 23:25:26 on Jul 27,2026
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.intf(fast)
+# ** Note: $finish    : top.sv(45)
+#    Time: 10 us  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.sv line 45
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:26:34 on Jul 27,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling module async_fifo
+# -- Compiling interface intf
+# -- Compiling package list_svh_unit
+# ** Warning: fifo_generator_rd.sv(12): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 23:26:34 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# QuestaSim-64 vopt 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:26:34 on Jul 27,2026
+# vopt -reportprogress 300 top "+cover=fcbest" -o UNDERFLOW 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading interface intf
+# -- Loading module async_fifo
+# Incremental compilation check found 4 design-units (out of 5) may be reused.
+# Optimizing 1 design-unit (inlining 2/3 module instances):
+# -- Inlining interface intf(fast)
+# -- Inlining module async_fifo(fast)
+# -- Optimizing module top(fast)
+# Optimized design name is UNDERFLOW
+# End time: 23:26:35 on Jul 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Saving coverage database on exit...
+# End time: 23:26:35 on Jul 27,2026, Elapsed time: 0:01:09
+# Errors: 0, Warnings: 8
+# vsim -coverage UNDERFLOW -l fifo.log 
+# Start time: 23:26:36 on Jul 27,2026
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.intf(fast)
+# ** Note: $finish    : top.sv(45)
+#    Time: 10 us  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.sv line 45
+do run.do
+# QuestaSim-64 vlog 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:27:03 on Jul 27,2026
+# vlog -reportprogress 300 list.svh 
+# -- Compiling module async_fifo
+# -- Compiling interface intf
+# -- Compiling package list_svh_unit
+# ** Warning: fifo_generator_rd.sv(12): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(21): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_rd.sv(31): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(10): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(20): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(30): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(40): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: fifo_generator_wr.sv(50): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 23:27:03 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# QuestaSim-64 vopt 10.7c Compiler 2018.08 Aug 18 2018
+# Start time: 23:27:03 on Jul 27,2026
+# vopt -reportprogress 300 top "+cover=fcbest" -o UNDERFLOW 
+# 
+# Top level modules:
+# 	top
+# 
+# Analyzing design...
+# -- Loading module top
+# -- Loading interface intf
+# -- Loading module async_fifo
+# Incremental compilation check found no design-units have changed.
+# Optimized design name is UNDERFLOW
+# End time: 23:27:03 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Saving coverage database on exit...
+# End time: 23:27:04 on Jul 27,2026, Elapsed time: 0:00:28
+# Errors: 0, Warnings: 8
+# vsim -coverage UNDERFLOW -l fifo.log 
+# Start time: 23:27:04 on Jul 27,2026
+# Loading sv_std.std
+# Loading work.list_svh_unit(fast)
+# Loading work.top(fast)
+# Loading work.intf(fast)
+# ** Note: $finish    : top.sv(45)
+#    Time: 10 us  Iteration: 0  Instance: /top
+# 1
+# Break in Module top at top.sv line 45
+vcov merge final_coverage.ucdb *.ucdb
+# QuestaSim-64 vcover 10.7c Coverage Utility 2018.08 Aug 18 2018
+# Start time: 23:27:19 on Jul 27,2026
+# vcover merge final_coverage.ucdb CONCURRENT.ucdb EMPTY.ucdb FULL.ucdb OVERFLOW.ucdb UNDERFLOW.ucdb 
+# QuestaSim-64 vcover 10.7c Coverage Utility 2018.08 Aug 18 2018
+# Merging file CONCURRENT.ucdb
+# Merging file EMPTY.ucdb
+# Merging file FULL.ucdb
+# Merging file OVERFLOW.ucdb
+# Merging file UNDERFLOW.ucdb
+# Writing merged result to final_coverage.ucdb
+# 
+# End time: 23:27:19 on Jul 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# coverage read -dataset final_coverage2 C:/Navya/VLSIGURU/asynchronous_fifo_tb_sv/final_coverage.ucdb
+# C:/Navya/VLSIGURU/asynchronous_fifo_tb_sv/final_coverage.ucdb opened as coverage dataset "final_coverage2"
+coverage report -html -htmldir covhtmlreport -source -details -assert -directive -cvg -code bcefst -threshL 50 -threshH 90
+# Report created in covhtmlreport/index.html
+coverage exclude -du async_fifo -togglenode i
+coverage exclude -du async_fifo -togglenode rdata_o
+coverage report -html -htmldir covhtmlreport -source -details -assert -directive -cvg -code bcefst -threshL 50 -threshH 90
+# Report created in covhtmlreport/index.html
+# Saving coverage database on exit...
+# End time: 23:50:39 on Jul 27,2026, Elapsed time: 0:23:35
+# Errors: 0, Warnings: 0

@@ -1,0 +1,27 @@
+class rd_monitor;
+
+  virtual intf vif;
+  rd_transaction rd_tx;
+
+  function new();
+      vif= top.pif;
+  endfunction
+
+  task run();
+  forever begin
+    @(vif.r_mon_cb);
+    if(vif.r_mon_cb.rd_en_i==1) begin
+    rd_tx = new();
+    rd_tx.rd_en_i = vif.r_mon_cb.rd_en_i;
+    @(posedge vif.r_mon_cb);
+    rd_tx.rdata_o = vif.r_mon_cb.rdata_o;
+    rd_tx.empty_o = vif.r_mon_cb.empty_o;
+    rd_tx.underflow_o = vif.r_mon_cb.underflow_o;
+    //rd_tx.print("MON: RD_TX");
+    mon2scb_rd.put(rd_tx);
+    mon2cov_rd.put(rd_tx);
+    end
+    end
+  endtask
+
+endclass

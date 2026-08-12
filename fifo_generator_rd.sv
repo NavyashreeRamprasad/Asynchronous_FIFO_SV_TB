@@ -1,0 +1,41 @@
+class rd_generator;
+  rd_transaction rd_tx;
+  
+  task run();
+  wait(top.rst_i ==1 ); 
+            case(common::testcase)
+             
+         "EMPTY": begin
+                  wait(common::wr_bfm_count == `DEPTH) 
+                  repeat(`DEPTH) begin
+                  rd_tx = new();
+                  rd_tx.randomize with {rd_tx.rd_en_i == 1;};
+                  gen2bfm_rd.put(rd_tx);
+                  //rd_tx.print("GEN");
+                  end
+                 end
+         "UNDERFLOW": begin
+                  wait(common::wr_bfm_count == `DEPTH)
+                  repeat(`DEPTH+1) begin
+                  rd_tx = new();
+                  rd_tx.randomize with {rd_tx.rd_en_i == 1;};
+                  gen2bfm_rd.put(rd_tx);
+                 // rd_tx.print("GEN");
+                  end
+                 end
+
+         "CONCURRENT": begin
+                  wait(common::wr_bfm_count>0); 
+                  repeat(common::N) begin
+                  rd_tx = new();
+                  rd_tx.randomize with {rd_tx.rd_en_i == 1;};
+                  gen2bfm_rd.put(rd_tx);
+                  end
+                 end 
+        default:$error("INVALID TESTCASE");
+
+
+      endcase
+  endtask
+
+endclass
