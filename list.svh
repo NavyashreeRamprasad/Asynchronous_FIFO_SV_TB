@@ -3,6 +3,7 @@
 `define PTR_WIDTH  $clog2(`DEPTH) 
 
 `include "async_fifo.v"
+`include "assertions.sv"
 `include "fifo_interface.sv"
 `include "fifo_tx_rd.sv"
 `include "fifo_tx_wr.sv"
